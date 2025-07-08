@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NEC Digital | Consultoría Tecnológica",
   description: "Transformamos tu negocio con soluciones digitales personalizadas.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
