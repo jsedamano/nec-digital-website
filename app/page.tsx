@@ -1,65 +1,42 @@
+import Navbar from './components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f9fafb]">
+    <main className="min-h-screen bg-[#000]">
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-6 py-4 shadow-sm border-b border-[#ccc]">
-        {/* Logo + Links */}
-        <div className="flex items-center space-x-10">
-          <Link href="/">
-            <span className="text-2xl font-bold text-[#060606]">NEC DIGITAL</span>
+      <Navbar />
+
+      {/* Hero section con imagen de fondo y blur lateral */}
+      <section className="relative w-full h-[90vh] flex items-center justify-start text-white">
+        {/* Imagen de fondo */}
+        <Image
+          src="/landing.png"
+          alt="Fondo hero NEC"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="absolute z-0"
+        />
+
+        {/* Capa de gradiente oscura en el lado izquierdo */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent z-0" />
+
+        {/* Texto encima de la imagen */}
+        <div className="relative z-10 px-10 max-w-2xl">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            Consultoría tecnológica.
+            <br />
+            <span className="text-[#95d4dc]">Soluciones humanas.</span>
+          </h1>
+          <p className="mt-6 text-lg text-gray-200">
+            Impulsamos el cambio digital con un enfoque centrado en las personas, la eficiencia y la innovación.
+          </p>
+          <Link href="/contacto" className="inline-block mt-6 px-6 py-3 bg-[#95d4dc] text-[#1a2734] font-semibold rounded hover:bg-[#719ec3] transition-colors">
+            Conecta con nosotros →
           </Link>
-
-          {/* Menú principal */}
-          <div className="flex space-x-6">
-            {/* Servicios con submenú */}
-            <div className="relative group">
-              <button className="text-[#1a2734] font-medium hover:text-[#446177] focus:outline-none">
-                Servicios ▾
-              </button>
-              <div className="absolute hidden group-hover:block bg-white border rounded shadow-md mt-2 py-2 z-10">
-                <Link href="/servicios/estrategia" className="block px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Estrategia</Link>
-                <Link href="/servicios/desarrollo" className="block px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Desarrollo tecnológico</Link>
-                <Link href="/servicios/transformacion" className="block px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Transformación digital</Link>
-              </div>
-            </div>
-
-            {/* Sobre Nosotros */}
-            <Link href="/nosotros" className="text-[#1a2734] font-medium hover:text-[#446177]">
-              Sobre Nosotros
-            </Link>
-          </div>
         </div>
-
-        {/* Idioma + Contacto */}
-        <div className="flex items-center space-x-6">
-          <Link href="/contacto" className="text-[#1a2734] font-medium hover:text-[#446177]">
-            Contáctanos
-          </Link>
-
-          {/* Dropdown Idioma */}
-          <div className="relative group">
-            <button className="text-[#1a2734] hover:text-[#446177] focus:outline-none">
-              🌐 ES ▾
-            </button>
-            <div className="absolute hidden group-hover:block bg-white border rounded shadow-md mt-2 py-2 z-10 right-0">
-              <span className="block px-4 py-2 text-sm text-gray-500">Español (actual)</span>
-              <button disabled className="block px-4 py-2 text-gray-400 text-sm cursor-not-allowed">English (próximamente)</button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Landing page básica */}
-      <section className="flex flex-col items-center justify-center text-center px-6 py-32">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#1a2734] mb-4">
-          Consultoría tecnológica para transformar tu empresa
-        </h1>
-        <p className="text-[#446177] text-lg max-w-xl">
-          Te ayudamos a innovar, optimizar y liderar el cambio digital con soluciones adaptadas a tu negocio.
-        </p>
       </section>
     </main>
   );
