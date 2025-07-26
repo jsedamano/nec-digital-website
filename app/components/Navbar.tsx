@@ -40,11 +40,20 @@ export default function Navbar() {
                 <Link href="/servicios/transformacion" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
                   Transformación digital
                 </Link>
-                <Link href="/servicios/desarrollo" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Desarrollo tecnológico
+                <Link href="/servicios/ciberseguridad" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
+                  Ciberseguridad
                 </Link>
-                <Link href="/servicios/estrategia" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Estrategia
+                <Link href="/servicios/data-analytics" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
+                  Data Analytics
+                </Link>
+                <Link href="/servicios/gestion-procesos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
+                  Gestión de Procesos
+                </Link>
+                <Link href="/servicios/gestion-riesgos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
+                  Gestión de Riesgos
+                </Link>
+                <Link href="/servicios/compliance" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
+                  Compliance
                 </Link>
               </div>
             )}
