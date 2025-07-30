@@ -23,7 +23,9 @@ export default function Nosotros() {
         {/* Contenido del hero */}
         <div className="relative z-10 px-6">
           <h1 className="text-4xl font-bold mb-2">Sobre Nosotros</h1>
-          <p className="text-lg">Transformamos negocios mediante innovación digital y gestión de riesgos</p>
+          <p className="text-lg">Transformamos negocios mediante innovación digital, gestión de datos,
+          <p className="text-lg">uso de inteligencia artificial y gestión de riesgos</p>
+          </p>
         </div>
       </section>
 
@@ -70,7 +72,7 @@ export default function Nosotros() {
       {/* Contacto rápido */}
       <section className="text-center py-16 px-6 bg-[#f0f4f8]">
         <h2 className="text-3xl font-bold mb-4">¿Quieres saber más?</h2>
-        <p className="text-lg mb-6">Conecta con nosotros para impulsar tu transformación digital</p>
+        <p className="text-lg mb-6">Conecta con nosotros para impulsar la transformación digital de tu negocio</p>
         <a
           href="/contacto"
           className="inline-block px-6 py-3 bg-[#95d4dc] text-[#1a2734] font-semibold rounded hover:bg-[#719ec3] transition"
