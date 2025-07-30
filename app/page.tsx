@@ -25,13 +25,12 @@ export default function Home() {
 
         {/* Texto encima de la imagen */}
         <div className="relative z-10 px-10 max-w-2xl">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Consultoría tecnológica.
+          <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+            Transformación Digital
             <br />
-            <span className="text-[#95d4dc]">Soluciones humanas.</span>
           </h1>
-          <p className="mt-6 text-lg text-gray-200">
-            Impulsamos el cambio digital con un enfoque centrado en las personas, la eficiencia y la innovación.
+          <p className="mt-6 text-xl text-gray-200">
+            Impulsamos el cambio digital con un enfoque centrado en el cliente, los datos, la innovación y las personas.
           </p>
           <Link href="/contacto" className="inline-block mt-6 px-6 py-3 bg-[#95d4dc] text-[#1a2734] font-semibold rounded hover:bg-[#719ec3] transition-colors">
             Conecta con nosotros →
