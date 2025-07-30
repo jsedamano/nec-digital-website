@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showServicios, setShowServicios] = useState(false);
+  const [showIndustrias, setShowIndustrias] = useState(false);
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
 
   return (
@@ -24,41 +25,62 @@ export default function Navbar() {
 
         {/* Menú principal */}
         <div className="flex space-x-6 items-center">
-          {/* Servicios con submenú (con clic) */}
+          {/* Servicios con submenú */}
           <div className="relative">
             <button
-              onClick={() => setShowDropdown(!showDropdown)}
+              onClick={() => {
+                setShowServicios(!showServicios);
+                setShowIndustrias(false);
+              }}
               className="text-white font-medium hover:text-[#95d4dc] focus:outline-none"
             >
               Servicios ▾
             </button>
-            {showDropdown && (
+            {showServicios && (
               <div
-                className="absolute left-0 mt-2 flex flex-col bg-white border rounded shadow-md py-2 z-20 min-w-[220px]"
-                onMouseLeave={() => setShowDropdown(false)}
+                className="absolute left-0 mt-2 flex flex-col bg-white border rounded shadow-md py-2 z-20 min-w-[240px]"
+                onMouseLeave={() => setShowServicios(false)}
               >
-                <Link href="/servicios/transformacion" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Transformación digital
-                </Link>
-                <Link href="/servicios/ciberseguridad" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Ciberseguridad
-                </Link>
-                <Link href="/servicios/data-science" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Data Science
-                </Link>
-                <Link href="/servicios/gestion-procesos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Gestión de Procesos
-                </Link>
-                <Link href="/servicios/gestion-riesgos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Gestión de Riesgos
-                </Link>
-                <Link href="/servicios/compliance" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Compliance
-                </Link>
+                <Link href="/servicios/transformacion" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Transformación digital</Link>
+                <Link href="/servicios/ciberseguridad" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Ciberseguridad</Link>
+                <Link href="/servicios/data-science" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Data Science</Link>
+                <Link href="/servicios/gestion-procesos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Gestión de Procesos</Link>
+                <Link href="/servicios/gestion-riesgos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Gestión de Riesgos</Link>
+                <Link href="/servicios/compliance" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Compliance</Link>
               </div>
             )}
           </div>
 
+          {/* Industrias con submenú */}
+          <div className="relative">
+            <button
+              onClick={() => {
+                setShowIndustrias(!showIndustrias);
+                setShowServicios(false);
+              }}
+              className="text-white font-medium hover:text-[#95d4dc] focus:outline-none"
+            >
+              Industrias ▾
+            </button>
+            {showIndustrias && (
+              <div
+                className="absolute left-0 mt-2 flex flex-col bg-white border rounded shadow-md py-2 z-20 min-w-[220px]"
+                onMouseLeave={() => setShowIndustrias(false)}
+              >
+                <Link href="/industrias/finanzas" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Finanzas</Link>
+                <Link href="/industrias/retail" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Retail</Link>
+                <Link href="/industrias/salud" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Salud</Link>
+                <Link href="/industrias/energia" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Energía</Link>
+              </div>
+            )}
+          </div>
+
+          {/* Clientes */}
+          <Link href="/clientes" className="text-white font-medium hover:text-[#95d4dc]">
+            Clientes
+          </Link>
+
+          {/* Sobre Nosotros */}
           <Link href="/nosotros" className="text-white font-medium hover:text-[#95d4dc]">
             Sobre Nosotros
           </Link>
@@ -71,7 +93,7 @@ export default function Navbar() {
           Contáctanos
         </Link>
 
-        {/* Dropdown Idioma (clic) */}
+        {/* Dropdown Idioma */}
         <div className="relative">
           <button
             onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
