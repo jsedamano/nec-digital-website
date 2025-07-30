@@ -24,7 +24,7 @@ export default function Nosotros() {
         <div className="relative z-10 px-6">
           <h1 className="text-4xl font-bold mb-2">Sobre Nosotros</h1>
           <p className="text-lg">Transformamos negocios mediante innovación digital, gestión de datos,
-          <p className="text-lg">uso de inteligencia artificial y gestión de riesgos</p>
+            <p className="text-lg">uso de inteligencia artificial y gestión de riesgos</p>
           </p>
         </div>
       </section>
