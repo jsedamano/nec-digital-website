@@ -43,8 +43,8 @@ export default function Navbar() {
                 <Link href="/servicios/ciberseguridad" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
                   Ciberseguridad
                 </Link>
-                <Link href="/servicios/data-analytics" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
-                  Data Analytics
+                <Link href="/servicios/data-science" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
+                  Data Science
                 </Link>
                 <Link href="/servicios/gestion-procesos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">
                   Gestión de Procesos

@@ -8,7 +8,7 @@ export default function DataAnalyticsPage() {
       {/* Encabezado con imagen difuminada */}
       <section className="relative w-full h-[40vh] flex items-center justify-center bg-[url('/about-us.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
-        <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-center">Data Analytics</h1>
+        <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-center">Data Science</h1>
       </section>
 
       {/* Contenido */}
