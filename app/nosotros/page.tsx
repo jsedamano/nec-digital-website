@@ -24,7 +24,9 @@ export default function Nosotros() {
         <div className="relative z-10 px-6">
           <h1 className="text-4xl font-bold mb-2">Sobre Nosotros</h1>
           <p className="text-lg">Transformamos negocios mediante innovación digital, gestión de datos,
-            <p className="text-lg">uso de inteligencia artificial y gestión de riesgos</p>
+          </p>
+          <p className="text-lg">
+            uso de inteligencia artificial y gestión de riesgos.
           </p>
         </div>
       </section>
@@ -52,18 +54,26 @@ export default function Nosotros() {
           <div className="grid md:grid-cols-3 gap-10">
             <div className="bg-[#e6eef5] p-6 rounded shadow">
               <h3 className="text-xl font-semibold text-[#1a2734]">Yesika Neyra Espinoza</h3>
-              <p className="text-sm mt-2 text-[#446177]">MSc en Gestión de Riesgos y Gobierno de Datos</p>
-              <p className="mt-4 text-sm">+15 años de experiencia en el sistema financiero. Experta en transformación digital, normativas regulatorias y modelamiento de riesgos.</p>
+              <p className="text-sm mt-2 text-[#446177]">Lic. Economía y Estadística, Mag. Gestión Cuantitativa de Riesgos Financieros y Gestión de Riesgos</p>
+              <p className="mt-4 text-sm">Más de 15 años de experiencia con empresas de Sistema Financiero, COOPAC, Fintech y Central de Riesgos.</p>
+              <p className="mt-4 text-sm">Especialización en Transformación Digital y Gobierno del Dato.</p>
+              <p className="mt-4 text-sm">Docente en Gestión Integral de Riesgos Financieros y Analítica Avanzada de Datos.</p>
+              <p className="mt-4 text-sm">Dominio de SPE/SPF y odelamiento de riesgos.</p>
+              <p className="mt-4 text-sm">Experta en normativas regulatorias en Gestión de Riesgos.</p>
             </div>
             <div className="bg-[#e6eef5] p-6 rounded shadow">
               <h3 className="text-xl font-semibold text-[#1a2734]">Edith Cordova</h3>
-              <p className="text-sm mt-2 text-[#446177]">MBA en Transformación Digital</p>
-              <p className="mt-4 text-sm">Más de 15 años en proyectos estratégicos digitales. Especialista en procesos, tecnologías emergentes y modelos de madurez digital.</p>
+              <p className="text-sm mt-2 text-[#446177]">Lic. Ciencias de la Computación, MBA (ESAN-UCLA) y Mag. Transformación Digital (UNI)</p>
+              <p className="mt-4 text-sm">Más de 15 años de experiencia en el Sistema Financiero, en proyectos estratégicos digitales y de transformación.</p>
+              <p className="mt-4 text-sm">Certificado en gestión de procesos, metodologías ágiles y tecnologías emergentes.</p>
+              <p className="mt-4 text-sm">Experto en modelos de madurez digital (Deloitte, MacKinsey, etc.)</p>
             </div>
             <div className="bg-[#e6eef5] p-6 rounded shadow">
               <h3 className="text-xl font-semibold text-[#1a2734]">Isabel Avila Arosemena</h3>
-              <p className="text-sm mt-2 text-[#446177]">MFRM y Coach Empresarial</p>
-              <p className="mt-4 text-sm">Experta en ISO 9001, optimización de procesos con Kaizen, BPM y metodologías ágiles.</p>
+              <p className="text-sm mt-2 text-[#446177]">Ing. Economía (UNI), Mag. Gestión Integral de Riesgos, Coach Empresarial</p>
+              <p className="mt-4 text-sm">Experiencia de mas 15 años como consultor en empresas financieras, fondos de inversión y otros.</p>
+              <p className="mt-4 text-sm">Certificado en ISO 9001, reingeniería de procesos metodologías ágiles y tecnologías emergentes.</p>
+              <p className="mt-4 text-sm">Experto en modelos de optimización BPM, Kaizen, Design Thinking, Scrum.</p>
             </div>
           </div>
         </div>
