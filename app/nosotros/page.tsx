@@ -9,7 +9,7 @@ export default function Nosotros() {
       <section className="relative w-full h-[50vh] flex flex-col items-center justify-center text-white text-center">
         {/* Imagen de fondo con blur */}
         <Image
-          src="/about-us.png"
+          src="/nosotros.png"
           alt="Sobre Nosotros Background"
           layout="fill"
           objectFit="cover"

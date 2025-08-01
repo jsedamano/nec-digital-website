@@ -67,10 +67,12 @@ export default function Navbar() {
                 className="absolute left-0 mt-2 flex flex-col bg-white border rounded shadow-md py-2 z-20 min-w-[220px]"
                 onMouseLeave={() => setShowIndustrias(false)}
               >
-                <Link href="/industrias/finanzas" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Finanzas</Link>
-                <Link href="/industrias/retail" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Retail</Link>
+                <Link href="/industrias/bancos" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Bancos</Link>
+                <Link href="/industrias/financieras" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Financieras</Link>
+                <Link href="/industrias/cajas" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Cajas</Link>
+                <Link href="/industrias/cooperativas" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Cooperativas</Link>
+                <Link href="/industrias/fintech" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Fintech</Link>
                 <Link href="/industrias/salud" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Salud</Link>
-                <Link href="/industrias/energia" className="px-4 py-2 text-[#1a2734] hover:bg-[#e6eef5]">Energía</Link>
               </div>
             )}
           </div>

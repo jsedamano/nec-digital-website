@@ -9,15 +9,18 @@ export default function Contacto() {
 
       {/* Hero con fondo difuminado */}
       <section className="relative w-full h-[50vh] flex flex-col items-center justify-center text-white text-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#12252d]/80 to-[#1a2734]/80 z-0" />
+        {/* Imagen de fondo con blur */}
         <Image
-          src="/landing.png"
-          alt="Fondo Contacto"
+          src="/contacto.png"
+          alt="Sobre Nosotros Background"
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="absolute z-[-1] blur-sm"
+          className="absolute z-0 blur-sm"
         />
+      
+        {/* Capa semitransparente oscura para mayor contraste */}
+        <div className="absolute inset-0 bg-black/40 z-0" />
 
         <div className="relative z-10 px-6">
           <h1 className="text-4xl font-bold mb-2">Conversemos</h1>
