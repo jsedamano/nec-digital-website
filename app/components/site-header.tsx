@@ -29,7 +29,7 @@ export function SiteHeader() {
 
           <Link
             href="/contacto"
-            className="rounded-full border border-cyan-200/35 bg-cyan-100/12 px-4 py-2 text-sm font-semibold text-cyan-50 transition hover:border-cyan-100/80 hover:bg-cyan-100/22 lg:hidden"
+            className="rounded-full border border-cyan-200/35 bg-cyan-100/12 px-4 py-2 text-[15px] font-semibold text-cyan-50 transition hover:border-cyan-100/80 hover:bg-cyan-100/22 lg:hidden"
           >
             Contáctanos
           </Link>
@@ -37,7 +37,7 @@ export function SiteHeader() {
 
         <nav
           aria-label="Navegación principal"
-          className="flex items-center gap-1 overflow-x-auto text-sm font-medium text-white/82 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:gap-2"
+          className="flex items-center gap-1 overflow-x-auto text-base font-semibold text-white/82 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:gap-2"
         >
           {navItems.map((item) => (
             <Link
@@ -55,7 +55,7 @@ export function SiteHeader() {
 
         <Link
           href="/contacto"
-          className="ml-auto hidden rounded-full border border-cyan-200/35 bg-cyan-100/12 px-5 py-2.5 text-sm font-semibold text-cyan-50 shadow-[0_14px_45px_rgba(14,165,233,0.18)] transition hover:border-cyan-100/80 hover:bg-cyan-100/22 lg:inline-flex"
+          className="ml-auto hidden rounded-full border border-cyan-200/35 bg-cyan-100/12 px-5 py-2.5 text-[15px] font-semibold text-cyan-50 shadow-[0_14px_45px_rgba(14,165,233,0.18)] transition hover:border-cyan-100/80 hover:bg-cyan-100/22 lg:inline-flex"
         >
           Contáctanos
         </Link>
