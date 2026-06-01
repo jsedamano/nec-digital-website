@@ -5,7 +5,7 @@ const navItems = [
   { label: "Servicios", href: "/#servicios", hasMenu: true },
   { label: "Industrias", href: "/#industrias", hasMenu: true },
   { label: "Clientes", href: "/#clientes" },
-  { label: "Sobre Nosotros", href: "/#sobre-nosotros" },
+  { label: "Sobre Nosotros", href: "/sobre-nosotros" },
 ];
 
 export function SiteHeader() {

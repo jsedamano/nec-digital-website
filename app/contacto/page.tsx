@@ -84,22 +84,25 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <aside className="border border-white/14 bg-white/8 p-6 shadow-[0_24px_80px_rgba(2,8,23,0.34)] backdrop-blur-md sm:p-8 lg:ml-auto lg:max-w-xl">
-            <p className="text-sm font-semibold uppercase text-cyan-100">
-              Qué podemos explorar contigo
-            </p>
+          <aside className="relative overflow-hidden rounded-[2rem] border border-white/14 bg-white/8 p-6 shadow-[0_24px_80px_rgba(2,8,23,0.34)] backdrop-blur-md sm:p-8 lg:ml-auto lg:max-w-xl">
+            <div className="absolute -right-12 -top-12 h-36 w-36 rounded-full bg-cyan-200/14 blur-2xl" />
+            <div className="relative">
+              <p className="text-sm font-semibold uppercase text-cyan-100">
+                Qué podemos explorar contigo
+              </p>
 
-            <div className="mt-6 divide-y divide-white/12">
-              {conversationTopics.map((topic) => (
-                <div key={topic.title} className="py-5 first:pt-0 last:pb-0">
-                  <h2 className="text-xl font-semibold text-white">
-                    {topic.title}
-                  </h2>
-                  <p className="mt-2 leading-7 text-slate-100/78">
-                    {topic.text}
-                  </p>
-                </div>
-              ))}
+              <div className="mt-6 divide-y divide-white/12">
+                {conversationTopics.map((topic) => (
+                  <div key={topic.title} className="py-5 first:pt-0 last:pb-0">
+                    <h2 className="text-xl font-semibold text-white">
+                      {topic.title}
+                    </h2>
+                    <p className="mt-2 leading-7 text-slate-100/78">
+                      {topic.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </aside>
         </div>
