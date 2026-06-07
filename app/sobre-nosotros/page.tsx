@@ -8,47 +8,59 @@ const mission =
 const vision =
   "Ser la empresa referente en transformación digital en América Latina, reconocida por su impacto en la evolución digital de las organizaciones, generando valor, crecimiento sostenible e innovación en cada sector donde opera.";
 
-const sharedExecutiveDescription =
-  "Ejecutivo orientado hacia la innovación y mejoramiento de procesos mediante el uso de la tecnología de información, con más de 30 años de experiencia profesional, 25 de ellos en el sistema financiero. Amplia experiencia en Gestión de áreas de TI, Auditoria de Interna, Auditoria de Sistemas, Seguridad de la Información, gestión de riesgos de fraude, desarrollo e implementación de sistemas de información orientados a objetivos estratégicos del negocio, Administración de la producción de procesos de TI, automatización de procesos de TI y de auditoria, migración de sistemas de información a diferentes plataformas, Administración de Centros de Cómputo, Gestión de Riesgos Operativos, Riesgos Tecnológicos, Gestión de riesgos de continuidad del negocio; y Gestión de Proyectos, Gestión de Servicios de TI, Prevención y tratamiento del fraude. Asociado al Colegio de Ingenieros del Perú.";
-
 const teamMembers = [
   {
     name: "Edith Cordova",
     title:
-      "Lic. Ciencias de la Computación, MBA (ESAN-UCLA) y Mag. Transformación Digital (UNI)",
-    description: sharedExecutiveDescription,
+      "Consultora Principal en Transformación Digital y Tecnología",
+    description:
+      "Ejecutiva senior con más de 20 años de experiencia liderando programas de transformación digital, modernización tecnológica, gobierno de TI y ciberseguridad en los sectores financiero, corporativo y público. Ha ocupado posiciones de liderazgo como CTO, CISO, PMO Manager y Gerente de Tecnología, dirigiendo iniciativas de Core Banking, gobierno de datos, automatización de procesos, infraestructura tecnológica y adopción de inteligencia artificial. Su enfoque integra estrategia de negocio, tecnología y gestión del cambio para acelerar la evolución digital de las organizaciones.",
     image: "/team/edith-cordova.jpeg",
+    linkedin: "https://www.linkedin.com/in/edith-cordova-rodriguez/",
   },
   {
     name: "Isabel Avila Arosemena",
     title:
-      "Ing. Economía (UNI), Mag. Gestión Integral de Riesgos, Coach Empresarial",
+      "Mag. Gestión Integral de Riesgos, Coach Empresarial",
     description:
       "Experiencia de mas 15 años como consultor en empresas financieras, fondos de inversión y otros. Certificado en ISO 9001, reingeniería de procesos metodologías ágiles y tecnologías emergentes. Experto en modelos de optimización BPM, Kaizen, Design Thinking, Scrum.",
     image: "/team/isabel-avila.jpeg",
+    linkedin: "https://www.linkedin.com/in/isabel-avila-arosemena/",
   },
   {
     name: "Yesika Neyra Espinoza",
     title:
-      "Lic. Economía y Estadística, Mag. Gestión Cuantitativa de Riesgos Financieros y Gestión de Riesgos",
+      "Consultora Principal en Datos, Analítica e Inteligencia Artificial",
     description:
-      "Más de 15 años de experiencia con empresas de Sistema Financiero, COOPAC, Fintech y Central de Riesgos. Especialización en Transformación Digital y Gobierno del Dato. Docente en Gestión Integral de Riesgos Financieros y Analítica Avanzada de Datos. Dominio de SPE/SPF y modelamiento de riesgos. Experta en normativas regulatorias en Gestión de Riesgos.",
-    image: "/team/yesika-neyra.jpeg",
+      "Especialista en gestión integral de riesgos financieros, gobierno de datos, analítica avanzada e inteligencia artificial, con más de 15 años de experiencia en banca, cooperativas, fintech y centrales de riesgo en Latinoamérica. Ha liderado proyectos de transformación digital, modelos predictivos, motores de decisión crediticia y estrategias de monetización de datos, ayudando a las organizaciones a convertir la información en ventajas competitivas y decisiones basadas en evidencia.",
+    image: "/team/yesika-neyra.png",
+    linkedin: "https://www.linkedin.com/in/yesika-neyra-e-bb5b5339/",
   },
   {
     name: "Antonio Venegas",
-    title: "Licenciado en Gestión de Empresas",
-    description: sharedExecutiveDescription,
+    title: "Consultor Principal en Auditoría, Riesgos y Gobierno de TI",
+    description:
+      "Profesional con más de 30 años de trayectoria en auditoría de sistemas, seguridad de la información, gestión de riesgos y gobierno de TI. Ha desempeñado cargos directivos en entidades financieras, consultoras y organizaciones públicas, liderando proyectos de auditoría tecnológica, prevención de fraude, continuidad del negocio y transformación tecnológica. Combina una sólida visión estratégica con amplio conocimiento de las mejores prácticas de gestión y control.",
     image: "/team/antonio-venegas.jpeg",
+    linkedin:
+      "https://www.linkedin.com/in/josè-antonio-venegas-salcedo-9559a32a/",
+  },
+  {
+    name: "José Venegas",
+    title: "Consultor Principal en Ciberseguridad y Continuidad del Negocio",
+    description:
+      "Especialista en seguridad de la información, continuidad del negocio y gestión de riesgos, con más de 15 años de experiencia asesorando a entidades financieras, aseguradoras y empresas de diversos sectores. Cuenta con certificaciones internacionales CISA, CBCP e ISO 27001 Lead Implementer, y ha liderado proyectos de ciberseguridad, protección de datos, continuidad operativa y cumplimiento regulatorio. Su experiencia permite fortalecer la resiliencia organizacional y la protección de activos críticos frente a los riesgos actuales.",
+    image: "/team/josé-venegas.png",
+    linkedin: "https://www.linkedin.com/in/jovenegas/",
   },
   {
     name: "Joaquin Sedamano",
     title:
-      "Ciencias de la Computación en Virginia Tech (USA). Ciberseguridad en BCP",
+      "Consultor Junior de Innovación, Desarrollo Digital y Ciberseguridad",
     description:
-      "Perfil profesional en preparación. Próximamente se incorporará su descripción completa, experiencia y áreas de especialización dentro del equipo de NEC Digital.",
+      "Estudiante de Ciencias de la Computación en Virginia Tech (EE. UU.), con experiencia en desarrollo de aplicaciones, diseño de plataformas digitales y tecnologías emergentes. Participa activamente en iniciativas de innovación, liderazgo y desarrollo de software, combinando una sólida formación técnica con una visión orientada a la resolución de problemas y la transformación digital. Ha contribuido en proyectos de desarrollo web y aplicaciones digitales, aportando creatividad, pensamiento analítico y enfoque en la experiencia del usuario.",
     image: "/team/joaquin-sedamano.png",
-    featured: true,
+    linkedin: "https://www.linkedin.com/in/joaquin-sedamano/",
   },
 ];
 
@@ -131,9 +143,7 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className={`rounded-lg border border-slate-200 bg-white p-6 shadow-sm ${
-                  member.featured ? "lg:col-span-2" : ""
-                }`}
+                className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
               >
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
                   <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border border-slate-200 bg-[#d9e8ef] shadow-sm">
@@ -147,15 +157,20 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <p className="text-xs font-bold uppercase text-cyan-700">
-                      Equipo NEC Digital
-                    </p>
-                    <h3 className="mt-3 text-2xl font-semibold text-[#082231]">
+                    <h3 className="text-2xl font-semibold text-[#082231]">
                       {member.name}
                     </h3>
                     <p className="mt-2 text-sm font-semibold leading-6 text-cyan-700">
                       {member.title}
                     </p>
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex text-sm font-semibold text-[#0a66c2] underline decoration-[#0a66c2]/40 underline-offset-4 transition-colors hover:text-[#004182]"
+                    >
+                      LinkedIn
+                    </a>
 
                     <p className="mt-5 leading-8 text-slate-700">
                       {member.description}
