@@ -50,7 +50,7 @@ const teamMembers = [
     title: "Consultor Principal en Ciberseguridad y Continuidad del Negocio",
     description:
       "Especialista en seguridad de la información, continuidad del negocio y gestión de riesgos, con más de 15 años de experiencia asesorando a entidades financieras, aseguradoras y empresas de diversos sectores. Cuenta con certificaciones internacionales CISA, CBCP e ISO 27001 Lead Implementer, y ha liderado proyectos de ciberseguridad, protección de datos, continuidad operativa y cumplimiento regulatorio. Su experiencia permite fortalecer la resiliencia organizacional y la protección de activos críticos frente a los riesgos actuales.",
-    image: "/team/josé-venegas.png",
+    image: "/team/jose-venegas.png",
     linkedin: "https://www.linkedin.com/in/jovenegas/",
   },
   {
