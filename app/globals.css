@@ -34,8 +34,13 @@ a {
   animation: logo-fade-in 620ms ease-out both;
 }
 
+.service-card {
+  animation: logo-fade-in 620ms ease-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .client-logo-card {
+  .client-logo-card,
+  .service-card {
     animation: none;
   }
 }

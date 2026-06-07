@@ -51,12 +51,12 @@ export default function Home() {
             >
               Conecta con nosotros
             </Link>
-            <a
-              href="#servicios"
+            <Link
+              href="/servicios"
               className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/14"
             >
               Ver servicios
-            </a>
+            </Link>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3 text-sm text-cyan-50/90">
