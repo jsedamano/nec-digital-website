@@ -3,7 +3,6 @@ import Link from "next/link";
 import { getServiceHref, services } from "../data/services";
 
 const navItems = [
-  { label: "Industrias", href: "/#industrias", hasMenu: true },
   { label: "Clientes", href: "/clientes" },
   { label: "Sobre Nosotros", href: "/sobre-nosotros" },
 ];
@@ -81,9 +80,6 @@ export function SiteHeader() {
               className="group flex shrink-0 items-center gap-1 rounded-full px-3 py-2 transition hover:bg-white/10 hover:text-white sm:px-4"
             >
               {item.label}
-              {item.hasMenu ? (
-                <span className="h-1.5 w-1.5 rotate-45 border-b border-r border-cyan-100/80 transition group-hover:translate-y-0.5" />
-              ) : null}
             </Link>
           ))}
         </nav>
